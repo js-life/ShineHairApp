@@ -3,8 +3,10 @@ import { View } from "react-native";
 
 // import { Container } from './styles';
 
+import Test from "~/Test";
+
 const App = () => {
-  return <View />;
+  return <Test />;
 };
 
 export default App;
