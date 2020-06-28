@@ -3,10 +3,10 @@ import { View } from "react-native";
 
 // import { Container } from './styles';
 
-import Test from "~/Test";
+import Routes from "~/routes";
 
 const App = () => {
-  return <Test />;
+  return <Routes />;
 };
 
 export default App;
