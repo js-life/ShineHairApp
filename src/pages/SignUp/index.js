@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { useRef, useState } from "react";
 import { Image } from "react-native";
 import { useDispatch, useSelector } from "react-redux";
@@ -16,6 +17,7 @@ import {
   SignLinkText,
 } from "./styles";
 
+// eslint-disable-next-line react/prop-types
 export default function SignUp({ navigation }) {
   const dispatch = useDispatch();
 
@@ -55,8 +57,8 @@ export default function SignUp({ navigation }) {
             autoCorrect={false}
             autoCapitalize="none"
             placeholder="Digite seu e-mail"
-            ref={emailRef}
             returnKeyType="next"
+            ref={emailRef}
             onSubmitEditing={() => passwordRef.current.focus()}
             value={email}
             onChangeText={setEmail}
