@@ -10,7 +10,7 @@ import Appointment from "~/components/Appointment";
 import { Container, Title, List } from "./styles";
 
 export default function Dashboard() {
-  const [appointments, setAppointments] = useState([""]);
+  const [appointments, setAppointments] = useState([]);
 
   useEffect(() => {
     async function loadAppointments() {

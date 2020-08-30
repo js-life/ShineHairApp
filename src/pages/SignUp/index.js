@@ -32,6 +32,10 @@ export default function SignUp({ navigation }) {
 
   function handleSubmit() {
     dispatch(signUpRequest(name, email, password));
+
+    setName("");
+    setEmail("");
+    setPassword("");
   }
 
   return (
